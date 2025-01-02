@@ -1,17 +1,11 @@
-FROM xgorn/python-phantomjs:3.9
+FROM python:3.9
 
-# Copy coding files to workdir
-COPY . /app/
-WORKDIR /app/
+RUN apt-get update -y && apt-get upgrade -y
+RUN apt-get install ffmpeg -y
 
-ENV PYTHONUNBUFFERED=1
+WORKDIR .
+COPY . .
 
-# Copy requirements.txt to root
-COPY requirements.txt .
-
-# Install dependencies
 RUN pip3 install --no-cache-dir -r requirements.txt
-RUN apt-get update
-RUN apt-get install -y ffmpeg
 
-CMD python3 -m Bot
+CMD ["python3", "bot.py"]
