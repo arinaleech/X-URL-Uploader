@@ -3,6 +3,7 @@ yt-dlp
 Pillow
 aiohttp
 hachoir
+python-3.11.2
 olefile
 requests
 tgcrypto
