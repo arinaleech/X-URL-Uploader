@@ -1,1 +1,1 @@
-FROM xgorn/xurluploader:latest
+web: gunicorn app:app & python3 bot.py
