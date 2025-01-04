@@ -44,7 +44,7 @@ class Config(object):
     HTTP_PROXY = os.environ.get("HTTP_PROXY", "")
 
     # watermark file
-    DEF_WATER_MARK_FILE = ""
+    DEF_WATER_MARK_FILE = "💋"
 
     # Telegram maximum file upload size
     MAX_FILE_SIZE = 50000000
