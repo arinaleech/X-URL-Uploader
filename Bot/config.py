@@ -19,10 +19,10 @@ class Config(object):
 
     DUMP_ID = int(os.environ.get("DUMP_ID", 0))
 
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "7619169027:AAG33n3Em3vicp48ADx1_uE80bNZLcbZgSA")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "7619169027:")
 
-    APP_ID = int(os.environ.get("APP_ID", "21894814"))
-    API_HASH = os.environ.get("API_HASH","4366bdf6ed33089c363df8e4d7b9a1b5f0a88")
+    APP_ID = int(os.environ.get("APP_ID", ""))
+    API_HASH = os.environ.get("API_HASH","")
 
     # Authorized User IDS
     AUTH_USERS = [int(id) for id in os.environ.get(
